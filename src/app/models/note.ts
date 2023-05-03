@@ -4,4 +4,6 @@ export interface Note {
   description: string;
   tags: any[];
   image: string;
+  live: boolean;
+  earn: number;
 }

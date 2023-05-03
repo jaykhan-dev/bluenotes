@@ -1,23 +1,11 @@
 <!-- <app-search></app-search> -->
 
 <section id="home-bg" class="bg-black">
-  <div class="bg-black/80 lg:h-screen text-white p-4">
+  <div class="bg-black/90 lg:h-screen text-white p-4">
     <div class="mt-20">
-      <h1 class="text-4xl">Home</h1>
-      <p>paragraph</p>
-    </div>
-    <!-- NOTES -->
-    <div class="mt-20 grid lg:grid-cols-3 gap-4">
-      <div
-        *ngFor="let note of notes; index as index"
-        class="border border-white/20 shadow-xl rounded-2xl"
-      >
-        <img src="{{ note.image }}" alt="" />
-        <div class="p-4">
-          <h2 class="text-3xl font-bold">{{ note.title }}</h2>
-          <p>{{ note.description }}</p>
-        </div>
-      </div>
+      <!-- <h1 class="text-4xl">Home</h1>
+      <p>paragraph</p> -->
+      <app-note></app-note>
     </div>
   </div>
 </section>

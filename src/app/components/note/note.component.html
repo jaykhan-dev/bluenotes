@@ -1,1 +1,40 @@
-<p>note works!</p>
+<!-- NOTES -->
+<div class="mt-20 grid lg:grid-cols-3 gap-4">
+  <div
+    *ngFor="let note of notes; index as index"
+    class="border border-white/20 shadow-xl rounded-2xl relative"
+  >
+    <div class="flex -space-x-2 absolute right-0 -top-4">
+      <p
+        *ngIf="note.earn"
+        class="bg-orange-500 h-8 w-8 rounded-full text-center grid place-items-center"
+      >
+        5
+      </p>
+      <p
+        *ngIf="note.live === true"
+        class="bg-green-600 border border-white h-8 w-8 rounded-full grid place-items-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"
+          />
+        </svg>
+      </p>
+    </div>
+    <img src="{{ note.image }}" alt="" class="rounded-2xl" />
+    <div class="p-4">
+      <h2 class="text-3xl font-bold">{{ note.title }}</h2>
+      <p>{{ note.description }}</p>
+    </div>
+  </div>
+</div>

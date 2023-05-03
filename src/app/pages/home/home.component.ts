@@ -17,6 +17,5 @@ export class HomeComponent {
   constructor(private meta: Meta) {
     this.meta.addTag({ name: 'title', content: this.title });
     this.meta.addTag({ name: 'description', content: this.description });
-    this.notes = mockNoteData;
   }
 }
