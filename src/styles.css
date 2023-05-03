@@ -6,3 +6,11 @@
 .logo {
   font-family: "Righteous", sans-serif;
 }
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
