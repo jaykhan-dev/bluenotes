@@ -1,0 +1,7 @@
+#people-bg {
+  background: url(../../../assets/images/backgrounds.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}

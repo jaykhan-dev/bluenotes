@@ -17,6 +17,10 @@ import { SearchComponent } from './components/search/search.component';
 import { TagsComponent } from './components/tags/tags.component';
 import { RelaysComponent } from './pages/relays/relays.component';
 import { PeopleComponent } from './pages/people/people.component';
+import { NoteComponent } from './components/note/note.component';
+import { ConductComponent } from './pages/conduct/conduct.component';
+import { StoreModule } from '@ngrx/store';
+import { MaeveComponent } from './components/maeve/maeve.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,10 @@ import { PeopleComponent } from './pages/people/people.component';
     SearchComponent,
     TagsComponent,
     RelaysComponent,
-    PeopleComponent
+    PeopleComponent,
+    NoteComponent,
+    ConductComponent,
+    MaeveComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +45,8 @@ import { PeopleComponent } from './pages/people/people.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]

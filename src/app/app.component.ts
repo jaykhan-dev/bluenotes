@@ -53,6 +53,7 @@ export class AppComponent {
       { path: '/', icon: 'home', title: 'Home' },
       { path: '/relays', icon: 'info', title: 'Relays' },
       { path: '/people', icon: 'email', title: 'People' },
+      // { path: '/conduct', icon: 'email', title: 'Code of Conduct' },
     ];
   }
 
