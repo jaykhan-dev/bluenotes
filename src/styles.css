@@ -7,10 +7,14 @@
   font-family: "Righteous", sans-serif;
 }
 
+h1 {
+  font-family: "Bruno Ace SC", sans-serif;
+}
+
 h2,
 h3,
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 html,

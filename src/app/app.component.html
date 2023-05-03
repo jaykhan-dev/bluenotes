@@ -14,13 +14,14 @@
           <a routerLink="/" class="logo text-blue-500">Blue Notes</a>
         </div>
       </mat-toolbar>
-      <mat-nav-list class="">
-        <div class="flex flex-col p-4 space-y-4 uppercase justify-start">
+      <mat-nav-list class="flex flex-col p-4">
+        <div class="space-y-4 uppercase p-4">
           <div *ngFor="let link of links; index as i">
             <a routerLink="{{ link.path }}" class="text-sm font-bold">
               {{ link.title }}
             </a>
           </div>
+
           <!-- <button
             (click)="drawer.toggle()"
             type="button"
@@ -29,6 +30,19 @@
           >
             Close
           </button> -->
+        </div>
+        <div class="p-4">
+          <a routerLink="maeve" class="">
+            <div
+              class="hover:bg-blue-500 duration-300 p-1 px-2 border border-white/20 rounded-2xl shadow-xl w-full flex items-center space-x-4"
+            >
+              <div
+                id="maeve-avatar"
+                class="w-10 h-10 rounded-full border relative mr-4"
+              ></div>
+              Maeve AI
+            </div>
+          </a>
         </div>
       </mat-nav-list>
     </mat-sidenav>
@@ -67,6 +81,7 @@
       </mat-toolbar>
 
       <!-- Add Content Here -->
+
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
