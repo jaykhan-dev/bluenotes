@@ -1,0 +1,18 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  background: black;
+}
+
+.sidenav .mat-toolbar {
+  color: white;
+  margin: 0;
+  background: inherit;
+}
+
+.menu-list {
+  color: white;
+}
