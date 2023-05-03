@@ -7,6 +7,12 @@
   font-family: "Righteous", sans-serif;
 }
 
+h2,
+h3,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 html,
 body {
   height: 100%;
