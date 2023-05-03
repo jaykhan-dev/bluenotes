@@ -51,8 +51,8 @@ export class MainNavComponent {
   constructor(private breakpointObserver: BreakpointObserver) {
     this.links = [
       { path: '/', icon: 'home', title: 'Home' },
-      { path: '/about', icon: 'info', title: 'About' },
-      { path: '/contact', icon: 'email', title: 'Contact' },
+      { path: '/relays', icon: 'info', title: 'Relays' },
+      { path: '/people', icon: 'people', title: 'People' },
     ];
   }
 

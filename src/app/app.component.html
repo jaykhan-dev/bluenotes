@@ -16,9 +16,11 @@
       </mat-toolbar>
       <mat-nav-list class="">
         <div class="flex flex-col p-4 space-y-4 uppercase justify-start">
-          <a class="text-sm font-bold" *ngFor="let link of links; index as i">
-            {{ link.title }}
-          </a>
+          <div *ngFor="let link of links; index as i">
+            <a routerLink="{{ link.path }}" class="text-sm font-bold">
+              {{ link.title }}
+            </a>
+          </div>
           <!-- <button
             (click)="drawer.toggle()"
             type="button"

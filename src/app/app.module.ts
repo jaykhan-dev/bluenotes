@@ -13,13 +13,21 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { SearchComponent } from './components/search/search.component';
+import { TagsComponent } from './components/tags/tags.component';
+import { RelaysComponent } from './pages/relays/relays.component';
+import { PeopleComponent } from './pages/people/people.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    SearchComponent,
+    TagsComponent,
+    RelaysComponent,
+    PeopleComponent
   ],
   imports: [
     BrowserModule,
