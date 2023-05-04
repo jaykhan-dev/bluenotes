@@ -8,6 +8,8 @@ import { MaeveComponent } from './components/maeve/maeve.component';
 import { NoteFormComponent } from './components/note-form/note-form.component';
 import { AboutComponent } from './pages/about/about.component';
 import { SavedComponent } from './pages/saved/saved.component';
+import { AccountComponent } from './pages/account/account.component';
+import { NotificationsComponent } from './pages/notifications/notifications.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +20,8 @@ const routes: Routes = [
   { path: 'maeve', component: MaeveComponent },
   { path: 'new-note', component: NoteFormComponent },
   { path: 'saved', component: SavedComponent },
+  { path: 'account', component: AccountComponent },
+  { path: 'notifications', component: NotificationsComponent },
 ];
 
 @NgModule({

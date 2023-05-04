@@ -27,6 +27,7 @@ import { SavedComponent } from './pages/saved/saved.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { ErrorComponent } from './components/error/error.component';
 import { AccountComponent } from './pages/account/account.component';
+import { NotificationsComponent } from './pages/notifications/notifications.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { AccountComponent } from './pages/account/account.component';
     SavedComponent,
     LoadingComponent,
     ErrorComponent,
-    AccountComponent
+    AccountComponent,
+    NotificationsComponent
   ],
   imports: [
     BrowserModule,
