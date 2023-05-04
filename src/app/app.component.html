@@ -56,9 +56,10 @@
     </mat-sidenav>
     <mat-sidenav-content class="">
       <mat-toolbar
-        class="bg-black overflow-hidden border-white/20 border-b text-white fixed top-0 flex items-center"
+        id="horizontal-toolbar"
+        class="bg-black border-white/20 border-b text-white fixed top-0 flex items-center overflow-hidden"
       >
-        <div class="flex items-center space-x-2 overflow-x-hidden p-1">
+        <div class="flex items-center space-x-2 p-1 w-10/12">
           <button
             type="button"
             aria-label="Toggle sidenav"
@@ -72,64 +73,68 @@
           <div
             class="lg:flex items-center hidden space-x-2 w-full justify-between"
           >
+            <div>
+              <a routerLink="new-note" class="">
+                <button
+                  class="text-sm bg-blue-500 animate-pulse hover:bg-blue-500 duration-300 py-1 px-3 border border-white/20 rounded-full shadow-xl w-full flex items-center space-x-4"
+                >
+                  <mat-icon>music_note</mat-icon>
+                  New Note
+                </button>
+              </a>
+            </div>
             <!-- <button
               class="text-sm border p-1 border-white/20 px-2 rounded-md hover:bg-purple-500 duration-300"
               *ngFor="let tag of tags; index as i"
             >
               #{{ tag.name }}
             </button> -->
-            <a routerLink="new-note" class="">
-              <button
-                class="text-sm bg-blue-500 animate-pulse hover:bg-blue-500 duration-300 py-1 px-3 border border-white/20 rounded-full shadow-xl w-full flex items-center space-x-4"
-              >
-                <mat-icon>music_note</mat-icon>
-                New Note
-              </button>
-            </a>
-            <!-- SEARCH -->
-            <input
-              type="text"
-              placeholder="search..."
-              class="text-sm py-2 px-4 bg-black/0 text-white border border-white/20 rounded-full"
-            />
-            <!-- account -->
-            <a routerLink="/account">
-              <button class="flex space-x-2 text-sm items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-10 h-10"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-              </button>
-            </a>
-            <!-- notifications -->
-            <a routerLink="/notifications">
-              <button class="flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-10 h-10"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
-                  />
-                </svg>
-              </button>
-            </a>
+            <div class="flex items-center space-x-2">
+              <!-- SEARCH -->
+              <input
+                type="text"
+                placeholder="search..."
+                class="text-sm py-2 px-4 bg-black/0 text-white border border-white/20 rounded-full"
+              />
+              <!-- account -->
+              <a routerLink="/login">
+                <button class="flex space-x-2 text-sm items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-10 h-10"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </button>
+              </a>
+              <!-- notifications -->
+              <a routerLink="/notifications">
+                <button class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-10 h-10"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                    />
+                  </svg>
+                </button>
+              </a>
+            </div>
             <!-- <button
               class="scale-75"
               mat-fab

@@ -20,8 +20,8 @@ p {
 html,
 body {
   height: 100%;
-}
-body {
+  display: block;
+  overflow: hidden;
   margin: 0;
 }
 

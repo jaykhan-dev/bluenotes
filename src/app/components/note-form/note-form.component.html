@@ -1,89 +1,106 @@
 <section id="new-note-bg">
   <div class="bg-black text-white p-4">
     <form action="" class="mt-20 text-white">
-      <h1 class="lg:text-4xl text-2xl font-bold">Create a New Note</h1>
+      <div class="">
+        <h1 class="lg:text-6xl text-2xl font-bold">Create a New Note</h1>
+        <button
+          class="mt-10 bg-purple-500 rounded-full px-4 py-2 border border-white/20"
+        >
+          publish
+        </button>
+      </div>
 
-      <div class="mt-10 grid lg:grid-cols-2 gap-4">
-        <div class="flex flex-col space-y-4">
-          <input
-            type="text"
-            required
-            placeholder="Title"
-            class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
-          />
-          <input
-            type="text"
-            required
-            placeholder="image url"
-            class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
-          />
-          <input
-            type="text"
-            placeholder="live event"
-            class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
-          />
-          <input
-            type="text"
-            placeholder="live virtual event"
-            class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
-          />
-          <input
-            type="text"
-            required
-            placeholder="tags separated by commas"
-            class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
-          />
-          <div>
-            <h2 class="font-bold my-4 px-2">Description</h2>
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              class="border border-white/20 rounded-2xl w-full bg-black/0 text-white p-4"
-            ></textarea>
-          </div>
-          <h2 class="mt-4 text-3xl font-bold">Monetization</h2>
-          <div class="grid lg:grid-cols-2 gap-4">
-            <div class="border border-white/20 rounded-xl shadow-xl p-4 h-64">
-              <h2 class="text-2xl font-bold">Entrance Fee</h2>
-              <p>Set entrance fee for live or virtual events.</p>
-              <input
-                type="number"
-                placeholder="enter amount"
-                class="bg-black border border-white/20 rounded-full p-4 text-white mt-4"
-              />
-            </div>
-            <div class="border border-white/20 rounded-xl shadow-xl p-4 h-64">
-              <h2 class="text-2xl font-bold">Earn</h2>
-              <p>Set amount of SATS your listeners will earn per track.</p>
-              <input
-                type="number"
-                placeholder="enter amount"
-                class="bg-black border border-white/20 rounded-full p-4 text-white mt-4"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="p-4 bg-zinc-900 rounded-2xl border border-white/20">
-          <h2 class="text-3xl font-bold mb-4">Build Playlist</h2>
-
-          <p></p>
-          <div>
+      <mat-tab-group class="text-white border-t border-white/20 mt-10 lg:w-2/3">
+        <mat-tab label="Meta" class="tabStyles border" color="">
+          <div class="flex flex-col space-y-4 py-10">
             <input
               type="text"
               required
-              placeholder="track url"
+              placeholder="Title"
               class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
             />
+            <input
+              type="text"
+              required
+              placeholder="image url"
+              class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
+            />
+            <input
+              type="text"
+              placeholder="live event"
+              class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
+            />
+            <input
+              type="text"
+              placeholder="live virtual event"
+              class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
+            />
+            <input
+              type="text"
+              required
+              placeholder="tags separated by commas"
+              class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
+            />
+            <div>
+              <h2 class="font-bold my-4 px-2">Description</h2>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                class="border border-white/20 rounded-2xl w-full bg-black/0 text-white p-4"
+              ></textarea>
+            </div>
           </div>
-          <button
-            class="mt-10 p-2 px-4 border rounded-full border-white/20 bg-blue-600"
-          >
-            + Add Track
-          </button>
-        </div>
-      </div>
+        </mat-tab>
+        <mat-tab label="Monetization">
+          <div class="flex flex-col space-y-4 py-10">
+            <h2 class="mt-4 lg:text-7xl font-bold">Monetization</h2>
+            <div class="grid lg:grid-cols-2 gap-4">
+              <div class="border border-white/20 rounded-xl shadow-xl p-4 h-64">
+                <h2 class="text-2xl font-bold">Entrance Fee</h2>
+                <p>Set entrance fee for live or virtual events.</p>
+                <input
+                  type="number"
+                  placeholder="enter amount"
+                  class="bg-black border border-white/20 rounded-full p-4 text-white mt-4"
+                />
+              </div>
+              <div class="border border-white/20 rounded-xl shadow-xl p-4 h-64">
+                <h2 class="text-2xl font-bold">Earn</h2>
+                <p>Set amount of SATS your listeners will earn per track.</p>
+                <input
+                  type="number"
+                  placeholder="enter amount"
+                  class="bg-black border border-white/20 rounded-full p-4 text-white mt-4"
+                />
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Playlist">
+          <div class="py-10">
+            <div class="p-4 bg-zinc-900 rounded-2xl border border-white/20">
+              <h2 class="text-3xl font-bold mb-4">Build Playlist</h2>
+
+              <p></p>
+              <div>
+                <input
+                  type="text"
+                  required
+                  placeholder="track url"
+                  class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
+                />
+              </div>
+              <button
+                class="mt-10 p-2 px-4 border rounded-full border-white/20 bg-blue-600"
+              >
+                + Add Track
+              </button>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
     </form>
   </div>
 </section>
