@@ -1,8 +1,9 @@
 export const mockNoteData = [
   {
     id: 1,
-    title: 'Artist 1',
+    title: 'Note Title 1',
     description: 'From Montreal',
+    artist: 'Artist 1',
     tags: [{ name: 'alternative' }, { name: 'blues' }],
     image: '../../assets/images/artist-1.jpg',
     live: true,
@@ -10,8 +11,9 @@ export const mockNoteData = [
   },
   {
     id: 2,
-    title: 'Artist 2',
+    title: 'Note Title 2',
     description: 'From New York',
+    artist: 'Artist 2',
     tags: [{ name: 'electronic' }, { name: 'folk' }],
     image: '../../assets/images/artist-2.jpg',
     live: false,
@@ -19,8 +21,9 @@ export const mockNoteData = [
   },
   {
     id: 3,
-    title: 'Artist 3',
+    title: 'Note Title 3',
     description: 'From London',
+    artist: 'Artist 3',
     tags: [{ name: 'hip-hop' }],
     image: '../../assets/images/artist-3.jpg',
     live: true,

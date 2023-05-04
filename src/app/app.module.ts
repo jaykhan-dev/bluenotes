@@ -21,6 +21,8 @@ import { NoteComponent } from './components/note/note.component';
 import { ConductComponent } from './pages/conduct/conduct.component';
 import { StoreModule } from '@ngrx/store';
 import { MaeveComponent } from './components/maeve/maeve.component';
+import { NoteFormComponent } from './components/note-form/note-form.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { MaeveComponent } from './components/maeve/maeve.component';
     PeopleComponent,
     NoteComponent,
     ConductComponent,
-    MaeveComponent
+    MaeveComponent,
+    NoteFormComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
