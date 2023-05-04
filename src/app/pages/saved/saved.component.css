@@ -1,0 +1,7 @@
+#saved-bg {
+  background: url(../../../assets/images/bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}

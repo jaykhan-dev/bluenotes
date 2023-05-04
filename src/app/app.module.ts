@@ -23,6 +23,10 @@ import { StoreModule } from '@ngrx/store';
 import { MaeveComponent } from './components/maeve/maeve.component';
 import { NoteFormComponent } from './components/note-form/note-form.component';
 import { AboutComponent } from './pages/about/about.component';
+import { SavedComponent } from './pages/saved/saved.component';
+import { LoadingComponent } from './components/loading/loading.component';
+import { ErrorComponent } from './components/error/error.component';
+import { AccountComponent } from './pages/account/account.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,11 @@ import { AboutComponent } from './pages/about/about.component';
     ConductComponent,
     MaeveComponent,
     NoteFormComponent,
-    AboutComponent
+    AboutComponent,
+    SavedComponent,
+    LoadingComponent,
+    ErrorComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,

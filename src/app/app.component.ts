@@ -52,9 +52,10 @@ export class AppComponent {
   constructor(private breakpointObserver: BreakpointObserver) {
     this.links = [
       // { path: '/', icon: 'home', title: 'Home' },
-      { path: '/about', icon: 'home', title: 'About' },
-      { path: '/relays', icon: 'info', title: 'Relays' },
-      { path: '/people', icon: 'email', title: 'People' },
+      { path: '/relays', icon: 'dns', title: 'Relays' },
+      { path: '/people', icon: 'account_circle', title: 'People' },
+      { path: '/saved', icon: 'favorite_border', title: 'Saved' },
+      { path: '/about', icon: 'face', title: 'About' },
       // { path: '/maeve', icon: '', title: 'Maeve (AI Assistant)' },
       // { path: '/conduct', icon: 'email', title: 'Code of Conduct' },
     ];
