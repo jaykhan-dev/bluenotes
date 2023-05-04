@@ -17,23 +17,52 @@
             placeholder="image url"
             class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
           />
+          <input
+            type="text"
+            placeholder="live event"
+            class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
+          />
+          <input
+            type="text"
+            placeholder="live virtual event"
+            class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
+          />
+          <input
+            type="text"
+            required
+            placeholder="tags separated by commas"
+            class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
+          />
+          <div>
+            <h2 class="font-bold my-4 px-2">Description</h2>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="border border-white/20 rounded-2xl w-full bg-black/0 text-white p-4"
+            ></textarea>
+          </div>
           <h2 class="mt-4 text-3xl font-bold">Monetization</h2>
           <div class="grid lg:grid-cols-2 gap-4">
             <div class="border border-white/20 rounded-xl shadow-xl p-4 h-64">
-              <h2 class="text-2xl font-bold">Earn</h2>
-              <p>
-                Set amount of SATS your listeners will earn per track. 5 is good
-                start if you are unsure.
-              </p>
+              <h2 class="text-2xl font-bold">Entrance Fee</h2>
+              <p>Set entrance fee for live or virtual events.</p>
               <input
                 type="number"
                 placeholder="enter amount"
                 class="bg-black border border-white/20 rounded-full p-4 text-white mt-4"
               />
             </div>
-            <div
-              class="border border-white/20 rounded-xl shadow-xl p-4 h-64"
-            ></div>
+            <div class="border border-white/20 rounded-xl shadow-xl p-4 h-64">
+              <h2 class="text-2xl font-bold">Earn</h2>
+              <p>Set amount of SATS your listeners will earn per track.</p>
+              <input
+                type="number"
+                placeholder="enter amount"
+                class="bg-black border border-white/20 rounded-full p-4 text-white mt-4"
+              />
+            </div>
           </div>
         </div>
         <div class="p-4 bg-zinc-900 rounded-2xl border border-white/20">
