@@ -1,1 +1,62 @@
-<p>note-form works!</p>
+<section id="new-note-bg">
+  <div class="h-screen bg-black text-white p-4">
+    <form action="" class="mt-20 text-white">
+      <h1 class="lg:text-4xl text-2xl font-bold">Create a New Note</h1>
+
+      <div class="mt-10 grid lg:grid-cols-2 gap-4">
+        <div class="flex flex-col space-y-4">
+          <input
+            type="text"
+            required
+            placeholder="Title"
+            class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
+          />
+          <input
+            type="text"
+            required
+            placeholder="image url"
+            class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
+          />
+          <h2 class="mt-4 text-3xl font-bold">Monetization</h2>
+          <div class="grid lg:grid-cols-2 gap-4">
+            <div
+              class="border border-white/20 rounded-xl shadow-xl p-4 h-64 bg-gradient-to-br from-orange-600 to-orange-400"
+            >
+              <h2 class="text-2xl font-bold">Earn</h2>
+              <p>
+                Set amount of SATS your listeners will earn per track. 5 is good
+                start if you are unsure.
+              </p>
+              <input
+                type="number"
+                placeholder="enter amount"
+                class="bg-black border border-white/20 rounded-full p-4 text-white mt-4"
+              />
+            </div>
+            <div
+              class="border border-white/20 rounded-xl shadow-xl p-4 h-64 bg-green-600"
+            ></div>
+          </div>
+        </div>
+        <div class="p-4 bg-zinc-900 rounded-2xl border border-white/20">
+          <h2 class="text-3xl font-bold mb-4">Build Playlist</h2>
+
+          <p></p>
+          <div>
+            <input
+              type="text"
+              required
+              placeholder="track url"
+              class="p-4 w-full border border-white/20 rounded-2xl bg-black/0 text-white"
+            />
+          </div>
+          <button
+            class="mt-10 p-2 px-4 border rounded-full border-white/20 bg-blue-600"
+          >
+            + Add Track
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

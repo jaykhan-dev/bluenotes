@@ -11,6 +11,7 @@ import { Tags } from 'src/app/models/tags';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  title: string = 'bluenotes';
   toggle: boolean = false;
 
   links: Links[] = [];
@@ -51,6 +52,7 @@ export class AppComponent {
   constructor(private breakpointObserver: BreakpointObserver) {
     this.links = [
       { path: '/', icon: 'home', title: 'Home' },
+      { path: '/about', icon: 'home', title: 'About' },
       { path: '/relays', icon: 'info', title: 'Relays' },
       { path: '/people', icon: 'email', title: 'People' },
       // { path: '/maeve', icon: '', title: 'Maeve (AI Assistant)' },

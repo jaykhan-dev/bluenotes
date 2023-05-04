@@ -1,0 +1,14 @@
+#about-bg {
+  background: url(../../../assets/images/blue-notes-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#rename-me {
+  background: url(../../../assets/images/maeve.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

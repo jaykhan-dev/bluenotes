@@ -6,14 +6,16 @@ import { PeopleComponent } from './pages/people/people.component';
 import { ConductComponent } from './pages/conduct/conduct.component';
 import { MaeveComponent } from './components/maeve/maeve.component';
 import { NoteFormComponent } from './components/note-form/note-form.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'relays', component: RelaysComponent },
   { path: 'people', component: PeopleComponent },
   { path: 'conduct', component: ConductComponent },
   { path: 'maeve', component: MaeveComponent },
-  { path: 'note-form', component: NoteFormComponent },
+  { path: 'new-note', component: NoteFormComponent },
 ];
 
 @NgModule({

@@ -13,14 +13,14 @@
   background-repeat: no-repeat;
 }
 
-#maeve-2 {
-  background: url(../../../assets/images/maeve-2.jpg);
+#maeve {
+  background: url(../../../assets/images/maeve.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-#maeve-3 {
-  background: url(../../../assets/images/maeve.jpg);
+#maeve-2 {
+  background: url(../../../assets/images/maeve-2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
