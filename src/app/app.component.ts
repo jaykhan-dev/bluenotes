@@ -51,7 +51,7 @@ export class AppComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {
     this.links = [
-      { path: '/', icon: 'home', title: 'Home' },
+      // { path: '/', icon: 'home', title: 'Home' },
       { path: '/about', icon: 'home', title: 'About' },
       { path: '/relays', icon: 'info', title: 'Relays' },
       { path: '/people', icon: 'email', title: 'People' },
