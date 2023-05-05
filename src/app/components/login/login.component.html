@@ -1,8 +1,25 @@
 <section id="login-bg">
-  <div class="h-screen grid place-items-center bg-black/70">
-    <div>
-      <h1>Login</h1>
+  <div class="h-screen p-4 w-full bg-black/70">
+    <div class="mx-auto text-white mt-20">
+      <h1 class="lg:text-8xl font-bold">Login</h1>
       <p>Use your public key to login</p>
+      <form action="">
+        <input
+          type="text"
+          class="my-4 p-4 border border-white/20 rounded-2xl bg-black/90 shadow-2xl text-white font-bold w-full"
+          placeholder="public key (read-only)"
+        />
+        <input
+          type="text"
+          class="my-4 p-4 border border-white/20 rounded-2xl bg-black/90 shadow-2xl text-white font-bold w-full"
+          placeholder="private key"
+        />
+        <input
+          type="text"
+          class="my-4 p-4 border border-white/20 rounded-2xl bg-black/90 shadow-2xl text-white font-bold w-full"
+          placeholder="extension (alby)"
+        />
+      </form>
     </div>
   </div>
 </section>

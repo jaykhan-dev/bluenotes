@@ -57,8 +57,9 @@ export class AppComponent {
       { path: '/people', icon: 'group_work', title: 'People' },
       { path: '/saved', icon: 'favorite_border', title: 'Saved' },
       { path: '/about', icon: 'face', title: 'About' },
+      { path: '/resources', icon: 'layers', title: 'Resources' },
       // { path: '/maeve', icon: '', title: 'Maeve (AI Assistant)' },
-      // { path: '/conduct', icon: 'email', title: 'Code of Conduct' },
+      { path: '/conduct', icon: 'people', title: 'Conduct' },
     ];
   }
 

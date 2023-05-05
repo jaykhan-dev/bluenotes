@@ -11,6 +11,7 @@ import { SavedComponent } from './pages/saved/saved.component';
 import { AccountComponent } from './pages/account/account.component';
 import { NotificationsComponent } from './pages/notifications/notifications.component';
 import { LoginComponent } from './components/login/login.component';
+import { ResourcesComponent } from './pages/resources/resources.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'account', component: AccountComponent },
   { path: 'notifications', component: NotificationsComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'resources', component: ResourcesComponent },
 ];
 
 @NgModule({

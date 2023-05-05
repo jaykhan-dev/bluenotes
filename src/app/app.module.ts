@@ -31,6 +31,7 @@ import { LoadingComponent } from './components/loading/loading.component';
 import { ErrorComponent } from './components/error/error.component';
 import { AccountComponent } from './pages/account/account.component';
 import { NotificationsComponent } from './pages/notifications/notifications.component';
+import { ResourcesComponent } from './pages/resources/resources.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { NotificationsComponent } from './pages/notifications/notifications.comp
     ErrorComponent,
     AccountComponent,
     NotificationsComponent,
+    ResourcesComponent,
   ],
   imports: [
     BrowserModule,
