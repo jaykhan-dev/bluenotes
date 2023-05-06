@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,6 +33,9 @@ import { ErrorComponent } from './components/error/error.component';
 import { AccountComponent } from './pages/account/account.component';
 import { NotificationsComponent } from './pages/notifications/notifications.component';
 import { ResourcesComponent } from './pages/resources/resources.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { NotionComponent } from './pages/notion/notion.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -54,10 +58,14 @@ import { ResourcesComponent } from './pages/resources/resources.component';
     AccountComponent,
     NotificationsComponent,
     ResourcesComponent,
+    BlogComponent,
+    NotionComponent,
+    FaqComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     LayoutModule,
     MatToolbarModule,
