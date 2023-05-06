@@ -73,7 +73,7 @@
           <div
             class="lg:flex items-center hidden space-x-2 w-full justify-between"
           >
-            <div>
+            <div class="flex items-center space-x-4">
               <a routerLink="new-note" class="">
                 <button
                   class="text-sm bg-blue-500 animate-pulse hover:bg-blue-500 duration-300 py-1 px-3 border border-white/20 rounded-full shadow-xl w-full flex items-center space-x-4"
@@ -82,6 +82,46 @@
                   New Note
                 </button>
               </a>
+              <!-- MUSIC PLAYER -->
+              <div class="flex items-center px-4">
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-8 h-8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+                    />
+                  </svg>
+                </button>
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-8 h-8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 5.25v13.5m-7.5-13.5v13.5"
+                    />
+                  </svg>
+                </button>
+                <p
+                  class="bg-zinc-900 px-4 py-1 rounded-full border border-white/20 text-sm"
+                >
+                  Song Title
+                </p>
+              </div>
             </div>
             <!-- <button
               class="text-sm border p-1 border-white/20 px-2 rounded-md hover:bg-purple-500 duration-300"
@@ -164,6 +204,22 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                  />
+                </svg>
+              </button>
+              <button class="-translate-x-10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"
                   />
                 </svg>
               </button>
